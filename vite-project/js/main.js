@@ -1,5 +1,8 @@
 import "../styles/style.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+import { menu } from "./menu";
 const DOMSelectors = {
   theme: document.getElementById("theme"),
 };

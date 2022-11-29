@@ -13,8 +13,20 @@ html {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: var(--h1);
 }
 
 #theme {
+}
+
+:root {
+  --light-blue: #2998ff;
+
+  /*Typography*/
+  --h1: 4.209rem;
+  --h2: 3.157rem;
+  --h3: 2.369rem;
+  --h4: 1.777rem;
+  --h5: 1.333rem;
+  --h6: 1rem;
 }
