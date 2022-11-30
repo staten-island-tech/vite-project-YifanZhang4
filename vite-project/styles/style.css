@@ -16,11 +16,38 @@ h1 {
   font-size: var(--h1);
 }
 
-#theme {
+#theme,
+#theme:link,
+#theme:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10rem;
+  transition: all 0.2s;
+}
+
+#theme:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 0.5rem #000000;
+}
+
+.dark {
+  --primary: var(--dark-gray);
+  --secondary: var(--light-gray);
+}
+
+.light {
+  --primary: var(--light-gray);
+  --seconday: var(--dark-gray);
 }
 
 :root {
-  --light-blue: #2998ff;
+  --dark-gray: #222222;
+  --light-gray: #dbdbdb;
 
   /*Typography*/
   --h1: 4.209rem;

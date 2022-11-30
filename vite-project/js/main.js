@@ -12,6 +12,6 @@ DOMSelectors.theme.addEventListener("click", function () {
   const addCSS = (css) =>
     (document.body.appendChild(document.createElement("style")).innerHTML =
       css);
-  addCSS("body{ background-color: #3b3b3b;");
-  addCSS("#header{ color: #dbdbdb;");
+  addCSS("body{ background-color: var(--primary);");
+  addCSS("#header{ color: var(--secondary);");
 });
