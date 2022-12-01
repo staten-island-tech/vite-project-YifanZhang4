@@ -9,8 +9,12 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
 #header {
-  
 }
 
 h1 {
@@ -22,12 +26,12 @@ h1 {
 .themebtn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 0.5rem 2rem;
   display: inline-block;
-  margin: 1rem auto;
-  font-size: 2rem;
+  margin: 0.5rem auto;
+  font-size: 1rem;
   border: none;
-  border-radius: 10rem;
+  border-radius: 5rem;
   transition: all 0.2s;
 }
 
