@@ -10,15 +10,16 @@ html {
 }
 
 #header {
+  
 }
 
 h1 {
   font-size: var(--h1);
 }
 
-#theme,
-#theme:link,
-#theme:visited {
+.themebtn,
+.themebtn:link,
+.themebtn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -30,7 +31,7 @@ h1 {
   transition: all 0.2s;
 }
 
-#theme:hover {
+.themebtn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 0.5rem #000000;
 }
