@@ -41,18 +41,18 @@ h1 {
 }
 
 .dark {
-  --primary: var(--dark-gray);
-  --secondary: var(--light-gray);
+  --primary: var(--dark);
+  --secondary: var(--light);
 }
 
 .light {
-  --primary: var(--light-gray);
-  --seconday: var(--dark-gray);
+  --primary: var(--light);
+  --seconday: var(--dark);
 }
 
 :root {
-  --dark-gray: #222222;
-  --light-gray: #dbdbdb;
+  --dark: #2d1803;
+  --light: #fac086;
 
   /*Typography*/
   --h1: 4.209rem;
