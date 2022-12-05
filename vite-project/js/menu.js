@@ -3,7 +3,7 @@ const menu = [
     name: "Original Milk Tea",
     inStock: false,
     MilkTea: true,
-    img: "https://brewedleaflove.com/wp-content/uploads/2019/07/bubble-tea-recipe-scaled.jpg",
+    img: "",
   },
   {
     name: "Thai Milk Tea",
