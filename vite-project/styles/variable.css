@@ -1,5 +1,6 @@
 body {
-  background-color: var(--light-blue);
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 h1,
@@ -10,4 +11,27 @@ h5,
 h6 {
   text-align: center;
   margin: 2rem;
+}
+
+.dark {
+  --primary: var(--dark);
+  --secondary: var(--light);
+}
+
+.light {
+  --primary: var(--light);
+  --secondary: var(--dark);
+}
+
+:root {
+  --dark: #604544;
+  --light: #b09393;
+
+  /*Typography*/
+  --h1: 4.209rem;
+  --h2: 3.157rem;
+  --h3: 2.369rem;
+  --h4: 1.777rem;
+  --h5: 1.333rem;
+  --h6: 1rem;
 }
