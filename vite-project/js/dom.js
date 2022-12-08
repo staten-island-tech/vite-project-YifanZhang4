@@ -1,5 +1,6 @@
 const DOMSelectors = {
-  themeBtn: document.querySelector(".themebtn"),
+  theme: document.querySelector("#theme"),
+  all: document.getElementById("all"),
   stock: document.getElementById("stock"),
   box: document.getElementById("box"),
 };
