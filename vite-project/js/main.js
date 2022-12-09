@@ -13,19 +13,28 @@ DOMSelectors.theme.addEventListener("click", function () {
 });
 
 DOMSelectors.all.addEventListener("click", function () {
+  MTeaStore.remove();
   MTeaStore.getAll();
 });
 
 DOMSelectors.stock.addEventListener("click", function () {
+  MTeaStore.remove();
   MTeaStore.getInStock();
 });
 
 DOMSelectors.milkTea.addEventListener("click", function () {
+  MTeaStore.remove();
   MTeaStore.getMilkTeas();
 });
 
-DOMSelectors.whalen.addEventListener("click", function() {
+DOMSelectors.whalen.addEventListener("click", function () {
+  MTeaStore.remove();
   MTeaStore.getWhalen();
+});
+
+DOMSelectors.reccomend.addEventListener("click", function () {
+  MTeaStore.remove();
+  MTeaStore.getReccomend();
 });
 
 const MTeaStore = {
@@ -43,15 +52,26 @@ const MTeaStore = {
     menu
       .filter((tea) => tea.MilkTea === true)
       .forEach((milkTea) =>
-      this.createCard(milkTea.name, milkTea.img, milkTea.inStock)
+        this.createCard(milkTea.name, milkTea.img, milkTea.inStock)
       );
   },
   getWhalen: function () {
     menu
-    .filter((tea) => tea.whalen === true)
-    .forEach((whaleTea) =>
-    this.createCard(whaleTea.name, whaleTea.img, whaleTea.inStock)
-    );
+      .filter((tea) => tea.whalen === true)
+      .forEach((whaleTea) =>
+        this.createCard(whaleTea.name, whaleTea.img, whaleTea.inStock)
+      );
+  },
+  getReccomend: function () {
+    menu
+      .filter((tea) => tea.reccomend === true)
+      .forEach((reccomendation) =>
+        this.createCard(
+          reccomendation.name,
+          reccomendation.img,
+          reccomendation.inStock
+        )
+      );
   },
   createCard: function (name, img, inStock) {
     DOMSelectors.box.insertAdjacentHTML(
@@ -62,4 +82,12 @@ const MTeaStore = {
     <h2>Is it in stock? ${inStock}.</h2>`
     );
   },
+  remove: function () {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      card.remove();
+    });
+  },
 };
+
+MTeaStore.getAll();

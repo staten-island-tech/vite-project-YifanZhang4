@@ -5,6 +5,7 @@ const menu = [
     MilkTea: true,
     img: "imgs/Original Milk Tea.png",
     whalen: true,
+    reccomend: true,
   },
   {
     name: "Thai Milk Tea",
@@ -12,6 +13,7 @@ const menu = [
     MilkTea: true,
     img: "imgs/Original Milk Tea.png",
     whalen: false,
+    reccomend: true,
   },
   {
     name: "Passionfruit Green Tea",
@@ -19,6 +21,7 @@ const menu = [
     MilkTea: false,
     img: "imgs/Original Milk Tea.png",
     whalen: false,
+    reccomend: true,
   },
   {
     name: "Strawberry Green Tea",
@@ -26,6 +29,7 @@ const menu = [
     MilkTea: false,
     img: "imgs/Original Milk Tea.png",
     whalen: false,
+    reccomend: true,
   },
   {
     name: "Black Sugar Oolong Tea",
@@ -33,6 +37,7 @@ const menu = [
     MilkTea: false,
     img: "imgs/Original Milk Tea.png",
     whalen: true,
+    reccomend: false,
   },
   {
     name: "Brown Sugar Milk Tea",
@@ -40,6 +45,7 @@ const menu = [
     MilkTea: true,
     img: "imgs/Original Milk Tea.png",
     whalen: false,
+    reccomend: false,
   },
   {
     name: "Matcha Milk Tea",
@@ -47,6 +53,7 @@ const menu = [
     MilkTea: true,
     img: "./imgs/Original Milk Tea.png",
     whalen: false,
+    reccomend: true,
   },
   {
     name: "Taro Milk Tea",
@@ -54,6 +61,7 @@ const menu = [
     MilkTea: true,
     img: "imgs/Original Milk Tea.png",
     whalen: false,
+    reccomend: false,
   },
   {
     name: "Lychee Green Tea",
@@ -61,6 +69,7 @@ const menu = [
     MilkTea: false,
     img: "imgs/Original Milk Tea.png",
     whalen: false,
+    reccomend: true,
   },
   {
     name: "Oreo Milk Tea",
@@ -68,6 +77,7 @@ const menu = [
     MilkTea: true,
     img: "imgs/Original Milk Tea.png",
     whalen: false,
+    reccomend: false,
   },
 ];
 

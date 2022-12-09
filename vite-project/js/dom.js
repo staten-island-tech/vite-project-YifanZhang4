@@ -4,9 +4,8 @@ const DOMSelectors = {
   stock: document.getElementById("stock"),
   milkTea: document.getElementById("milkTea"),
   whalen: document.getElementById("whalen"),
+  reccomend: document.getElementById("reccomend"),
   box: document.getElementById("box"),
-  cards: document.querySelectorAll("cards"),
-  refresh: document.getElementById("refresh"),
 };
 
 export { DOMSelectors };
