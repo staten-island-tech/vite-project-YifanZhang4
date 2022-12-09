@@ -1,6 +1,6 @@
 import "../styles/style.css";
-import { menu } from "./menu";
 import { DOMSelectors } from "./dom";
+import { menu } from "./menu";
 
 DOMSelectors.theme.addEventListener("click", function () {
   if (document.body.classList.contains("light")) {
@@ -20,20 +20,46 @@ DOMSelectors.stock.addEventListener("click", function () {
   MTeaStore.getInStock();
 });
 
+DOMSelectors.milkTea.addEventListener("click", function () {
+  MTeaStore.getMilkTeas();
+});
+
+DOMSelectors.whalen.addEventListener("click", function() {
+  MTeaStore.getWhalen();
+});
+
 const MTeaStore = {
   getAll: function () {
-    menu.forEach((tea) => this.createCard(tea.name));
+    menu.forEach((tea) => this.createCard(tea.name, tea.img, tea.inStock));
   },
   getInStock: function () {
     menu
-      .filter((tea) => tea.inStock === true)
-      .forEach((InStock) => this.createCard());
+      .filter((tea) => tea.inStock === "Yes")
+      .forEach((stock) =>
+        this.createCard(stock.name, stock.img, stock.inStock)
+      );
   },
-  createCard: function () {
+  getMilkTeas: function () {
+    menu
+      .filter((tea) => tea.MilkTea === true)
+      .forEach((milkTea) =>
+      this.createCard(milkTea.name, milkTea.img, milkTea.inStock)
+      );
+  },
+  getWhalen: function () {
+    menu
+    .filter((tea) => tea.whalen === true)
+    .forEach((whaleTea) =>
+    this.createCard(whaleTea.name, whaleTea.img, whaleTea.inStock)
+    );
+  },
+  createCard: function (name, img, inStock) {
     DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
       `<div class="card">
-    <h2>${menu.name}</h2>`
+    <h2>${name}</h2>
+    <img src="${img}" class="img">
+    <h2>Is it in stock? ${inStock}.</h2>`
     );
   },
 };
