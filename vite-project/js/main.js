@@ -77,9 +77,10 @@ const MTeaStore = {
     DOMSelectors.box.insertAdjacentHTML(
       "beforeend",
       `<div class="card">
-    <h2>${name}</h2>
+    <h2 class="head">${name}</h2>
     <img src="${img}" class="img">
-    <h2>Is it in stock? ${inStock}.</h2>`
+    <h2>Is it in stock? ${inStock}.</h2>
+    <h2>Price: $5.00</h2>`
     );
   },
   remove: function () {
