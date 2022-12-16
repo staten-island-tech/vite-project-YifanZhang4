@@ -67,6 +67,11 @@ h1 {
   border-width: 5px;
 }
 
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0.5rem #000000;
+}
+
 .img {
   max-height: 30rem;
   max-width: 25rem;
